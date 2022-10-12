@@ -2,9 +2,9 @@
 
 namespace Adam\groupMsgs\Tests;
 
+use Adam\groupMsgs\groupMsgsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Adam\groupMsgs\groupMsgsServiceProvider;
 
 class TestCase extends Orchestra
 {

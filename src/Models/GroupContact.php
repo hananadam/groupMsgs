@@ -11,12 +11,8 @@ class GroupContact extends Model
 
     protected $guarded = ['id'];
 
-
-
     public function contacts()
     {
         return $this->hasMany('Adam\groupMsgs\Contact');
     }
-
-   
 }
