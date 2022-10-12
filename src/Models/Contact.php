@@ -1,6 +1,6 @@
 <?php
 
-namespace Adam\groupMsgs\Models;
+namespace Wloop\GroupMessages\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

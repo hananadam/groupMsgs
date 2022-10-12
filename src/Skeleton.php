@@ -1,6 +1,6 @@
 <?php
 
-namespace Adam\groupMsgs;
+namespace Wloop\GroupMessages;
 
 class Skeleton
 {

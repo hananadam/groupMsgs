@@ -2,8 +2,8 @@
     "name": "wloop/group-messages",
     "description": "send group messages to list of contacts",
     "keywords": [
-        "hananadam",
-        "adam",
+        "wloop",
+        "whats_loop",
         "group-msgs",
         "group_msgs",
         "group_Msgs",
@@ -14,7 +14,7 @@
     "authors": [
         {
             "name": ":hanan_adam",
-            "email": "author@domain.com",
+            "email": "hananadam9@gmail.com",
             "role": "Developer"
         }
     ],
@@ -38,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Adam\\groupMsgs\\": "src",
-            "Adam\\groupMsgs\\Database\\Factories\\": "database/factories"
+            "Wloop\\GroupMessages\\": "src",
+            "Wloop\\GroupMessages\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Adam\\groupMsgs\\Tests\\": "tests"
+            "Wloop\\GroupMessages\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -64,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Adam\\groupMsgs\\groupMsgsServiceProvider"
+                "Wloop\\GroupMessages\\GroupMessagesServiceProvider"
             ],
             "aliases": {
-                "groupMsgs": "Adam\\groupMsgs\\Facades\\groupMsgs"
+                "GroupMessages": "Wloop\\GroupMessages\\Facades\\GroupMessages"
             }
         }
     },

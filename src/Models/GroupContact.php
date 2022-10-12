@@ -1,6 +1,6 @@
 <?php
 
-namespace Adam\groupMsgs\Models;
+namespace Wloop\GroupMessages\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +15,7 @@ class GroupContact extends Model
 
     public function contacts()
     {
-        return $this->hasMany('Adam\groupMsgs\Contact');
+        return $this->hasMany('Wloop\GroupMessages\Contact');
     }
 
    

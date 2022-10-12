@@ -1,16 +1,16 @@
 <?php
 
-namespace  Adam\groupMsgs\Facades;
+namespace  Wloop\GroupMessages\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Adam\groupMsgs\Skeleton
+ * @see Wloop\GroupMessages\Skeleton
  */
 class Skeleton extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Adam\groupMsgs\Skeleton::class;
+        return \Wloop\GroupMessages\Skeleton::class;
     }
 }

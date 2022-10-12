@@ -1,6 +1,6 @@
 <?php
 
-namespace Adam\groupMsgs\Database\Factories;
+namespace Wloop\GroupMessages\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

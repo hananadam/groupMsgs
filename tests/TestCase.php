@@ -1,10 +1,10 @@
 <?php
 
-namespace Adam\groupMsgs\Tests;
+namespace Wloop\GroupMessages\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Adam\groupMsgs\groupMsgsServiceProvider;
+use Wloop\GroupMessages\GroupMessagesServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Adam\\groupMsgs\\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Wloop\GroupMessages\\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            groupMsgsServiceProvider::class,
+            GroupMessagesServiceProvider::class,
         ];
     }
 
