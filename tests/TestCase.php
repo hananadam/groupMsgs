@@ -2,8 +2,10 @@
 
 namespace Wloop\GroupMessages\Tests;
 
+use Adam\groupMsgs\groupMsgsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+
 use Wloop\GroupMessages\GroupMessagesServiceProvider;
 
 class TestCase extends Orchestra
