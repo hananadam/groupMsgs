@@ -9,7 +9,7 @@
         "group_Msgs",
         "group_messages"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage":"https://github.com/hananadam/groupMsgs",
     "license": "MIT",
     "authors": [
         {
