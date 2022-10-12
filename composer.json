@@ -1,16 +1,19 @@
 {
-    "name": ":hananadam/:groupMsgs",
-    "description": ":package_description",
+    "name": "wloop/group-messages",
+    "description": "send group messages to list of contacts",
     "keywords": [
-        ":vendor_name",
-        "laravel",
-        ":package_slug"
+        "hananadam",
+        "adam",
+        "group-msgs",
+        "group_msgs",
+        "group_Msgs",
+        "group_messages"
     ],
     "homepage": "https://github.com/:vendor_slug/:package_slug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
+            "name": ":hanan_adam",
             "email": "author@domain.com",
             "role": "Developer"
         }
@@ -35,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Adam\\groupMsgs\\": "src",
+            "Adam\\groupMsgs\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Adam\\groupMsgs\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Adam\\groupMsgs\\groupMsgsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "groupMsgs": "Adam\\groupMsgs\\Facades\\groupMsgs"
             }
         }
     },

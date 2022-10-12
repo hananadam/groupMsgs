@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Adam\groupMsgs;
 
 class Skeleton
 {
