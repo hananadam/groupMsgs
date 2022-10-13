@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\Wloop\GroupMessages\Models\GroupContact::class)->constrained()->onDelete('cascade');
-            $table->integer('has_whatsapp')->nullable();
+            $table->integer('has_whatsapp')->default(0);
             $table->integer('lang')->default(0);
             $table->string('name');
-            $table->string('phone');
+            $table->string('phone')->unique();
             $table->string('email')->nullable();
             $table->string('city')->nullable();
             $table->string('country')->nullable();
@@ -36,6 +36,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('deleted_by')->nullable();
             $table->softDeletes();
+
         });
     }
 

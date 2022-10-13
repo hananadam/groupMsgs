@@ -14,10 +14,12 @@ class GroupMessagesServiceProvider extends PackageServiceProvider
             ->name('GroupMessages')
             ->hasConfigFile()
             ->hasMigrations([
-                '2022_10_12_124247_create_group_contacts_table',
-                '2022_10_12_124248_create_contacts_table',
+                "2022_10_12_124247_create_group_contacts_table",
+                "2022_10_12_124248_create_contacts_table",
             ])
             ->runsMigrations()
             ->hasCommand(GroupMessagesCommand::class);
     }
+    
 }
+

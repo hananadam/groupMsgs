@@ -16,7 +16,11 @@ return new class extends Migration
         Schema::create('group_contacts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('created_by')->nullable();
+            $table->string('updated_by')->nullable();
             $table->timestamps();
+            $table->string('deleted_by')->nullable();
+            $table->softDeletes();
         });
     }
 
