@@ -36,7 +36,6 @@ return new class extends Migration
             $table->timestamps();
             $table->string('deleted_by')->nullable();
             $table->softDeletes();
-
         });
     }
 
