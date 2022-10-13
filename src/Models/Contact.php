@@ -10,6 +10,7 @@ class Contact extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+<<<<<<< HEAD
    
 
 
@@ -17,4 +18,6 @@ class Contact extends Model
     {
         return $this->belongsToMany(GroupContact::class, ContactGroup::class);
     }
+=======
+>>>>>>> a9e549c2451c72c7f373cdddf00a558789a7ff59
 }
