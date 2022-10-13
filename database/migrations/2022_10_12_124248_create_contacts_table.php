@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\Wloop\GroupMessages\Models\GroupContact::class)->constrained()->onDelete('cascade');
             $table->integer('has_whatsapp')->default(0);
             $table->integer('lang')->default(0);
             $table->string('name');

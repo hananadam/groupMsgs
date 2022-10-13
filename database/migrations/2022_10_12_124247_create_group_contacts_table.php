@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('group_contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('en_name');
+            $table->string('ar_name');
+            $table->string('ar_description')->nullable();
+            $table->string('en_description')->nullable();
             $table->string('created_by')->nullable();
             $table->string('updated_by')->nullable();
             $table->timestamps();

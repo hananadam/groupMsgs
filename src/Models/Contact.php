@@ -11,4 +11,10 @@ class Contact extends Model
 
     protected $guarded = ['id'];
    
+
+
+    public function contact_groups()
+    {
+        return $this->belongsToMany(GroupContact::class, ContactGroup::class);
+    }
 }

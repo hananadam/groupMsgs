@@ -13,10 +13,10 @@ class GroupContact extends Model
 
 
 
-    public function contacts()
-    {
-        return $this->hasMany('Wloop\GroupMessages\Contact');
-    }
+    // public function pivot_contacts()
+    // {
+    //     return $this->belongsToMany(Contact::class);
+    // }
 
    
 }
